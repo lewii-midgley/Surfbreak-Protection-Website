@@ -1,0 +1,285 @@
+
+
+.latestNews-master{
+    height: 70vh;
+    width: 100vw;
+}
+
+.latestNews-container{
+    height: 100%;
+    width: 100%;
+
+    background: url(../img/mid-ocean.jpeg);
+    background-color: darkslategrey;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    &--h2{
+        height: 25%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        border: 2px solid black;
+
+        &__h2{
+            @include landing-header;
+            -webkit-text-stroke: 1px white;
+        }
+        // &__img{
+        //     height: 0.8rem;
+        //     margin-top: 4rem;
+        //     margin-bottom: 4rem;
+        // }
+    }
+
+
+
+    &--newsBoxes{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        border: 2px solid white;
+
+        &__box1{
+            @include center-center;
+            flex-direction: column;
+            width: 35rem;
+            height: 100%;
+            border: 0.2px solid white;
+            text-align: center;
+            background: url(../img/waiwhakaiho-web.jpeg);
+            background-color: grey;
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &--h3{
+                color: white;
+                padding-left: 7%;
+                padding-right: 7%;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 1.4rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        &__box2{
+            @include center-center;
+            flex-direction: column;
+            width: 35rem;
+            height: 100%;
+            border: 0.2px solid white;
+            text-align: center;
+            background: url(../img/eight_col_Mangamaunu.jpeg);
+            background-color: grey;
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &--h3{
+                color: white;
+                padding-left: 7%;
+                padding-right: 7%;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 1.4rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        &__box3{
+            @include center-center;
+            flex-direction: column;
+            width: 35rem;
+            height: 100%;
+            border: 0.2px solid white;
+            text-align: center;
+            background: url(../img/mick_fanning.jpeg);
+            background-color: grey;
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &--h3{
+                color: white;
+                padding-left: 7%;
+                padding-right: 7%;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 1.4rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        h3:hover{
+            font-size: 1.45rem;
+            line-height: 140%;
+            cursor: pointer;
+
+        }
+    }
+
+    &--h3{
+        height: 25%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        border: 2px solid red;
+
+        &__h3{
+            color: white;
+            font-size: 1.8rem;
+            font-family: 'Work Sans', sans-serif;
+            letter-spacing: 0.1rem;
+            padding-right: 10%;
+            margin-bottom: 0.5%;
+            cursor: pointer;
+        }
+
+        &__hr{
+            width: 110px;
+            margin-right: 10%;
+            cursor: pointer;
+        }
+    }
+}
+
+.newsletter-master{
+    height: 50vh;
+    width: 100vw;
+}
+
+.newsletter-container{
+    height: 100%;
+    width: 100%;
+
+    @include center-center;
+    flex-direction: column;
+
+
+    h1{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 4.6rem;
+        margin-bottom: 6rem;
+        letter-spacing: 0.4rem;
+    }
+
+
+    &--email{
+
+        &__text{
+            font-family: 'Work Sans', sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            letter-spacing: 0.2rem;
+            width: 45rem;
+            height: 5rem;
+        }
+    }
+
+    &--button{
+        margin-top: 4.7rem;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2.4rem;
+        background: black;
+        color: white;
+        padding: 1.3rem;
+        padding-right: 8rem;
+        padding-left: 8rem;
+        border-radius: 10px;
+        border: black;
+        cursor: pointer;
+        letter-spacing: 0.1rem;
+        border: 2px solid black;
+    }
+
+    &--button:hover{
+        color: black;
+        background: white;
+        border: 2px solid black;
+    }
+}
+
+
+
+@media #{$mobile}{
+
+    .latestNews-container{
+    
+        &--newsBoxes{
+    
+            &__box2{
+                display: none;
+            }
+
+            &__box3{
+                display: none;;
+            }
+        }
+
+        &--h3{
+            margin-top: 4rem;
+        }
+    }
+
+    .newsletter-container{
+
+        &--email{
+
+            &__text{
+                font-size: 2rem;
+                width: 40rem;
+                height: 5rem;
+            }
+        }
+
+        &--button{
+            margin-top: 4rem;
+            font-size: 2rem;
+            padding: 1.3rem;
+            padding-right: 8rem;
+            padding-left: 8rem;
+            border-radius: 10px;
+        }
+
+        h1{
+            font-size: 2.8rem;
+        }
+    }
+}
+
+
+@media #{$tablet}{
+
+    .latestNews-container{
+    
+        &--newsBoxes{
+    
+            &__box2{
+                display: none;
+            }
+        }
+    }
+
+    .newsletter-container{
+
+        h1{
+            font-size: 3.6rem;
+        }
+    }
+}
+

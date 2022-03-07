@@ -1,0 +1,316 @@
+
+
+.partners-master{
+    height: 20vh;
+    width: 100vw;
+}
+
+.partners-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background: #262626;
+
+    &--h3{
+        margin-top: 3rem;
+
+        &__text{
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.6rem;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    &--logos{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 40px;
+
+        &__logo{
+            height: 110px;
+        }
+
+        &__logo1{
+            height:100px;
+        }
+
+        &__logo2{
+            height: 90px;
+        }
+    }
+}
+
+.footer-master{
+    height: 30vh;
+    width: 100vw;
+}
+
+.footer-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    background: #262626;
+
+    &--row1{
+
+        h3{
+            font-family: 'Coming Soon', cursive;
+            color: white;
+            text-align: center;
+            font-size: 2.4rem;
+            max-width: 30ch;
+        }
+
+        &__socials{
+            @include center-center;
+            margin-top: 4rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+            &--img1{
+                color: white;
+                font-size: 4.3rem;
+                margin-right:1rem;
+                margin-left: 1rem;
+            }
+
+            &--img1:hover{
+                color: #23708a;
+            }
+
+            &--img2{
+                color: white;
+                font-size: 4rem;
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+
+            &--img2:hover{
+                color: #23708a;
+            }
+
+            &--img3{
+                font-size: 4.5rem;
+                color: white;
+                margin-right:1rem;
+                margin-left: 1rem;
+            }
+
+            &--img3:hover{
+                color: #23708a;
+            }
+
+            &--img4{
+                color: white;
+                font-size: 4rem;
+                margin-right:1rem;
+                margin-left: 1rem;
+            }
+
+            &--img4:hover{
+                color: #23708a;
+            }
+        }
+    }
+
+    &--row2{
+
+        &__li{
+            font-family: 'Work Sans', sans-serif;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            padding: 0.8rem;
+            letter-spacing: 0.2rem;
+        }
+
+        &__li:hover{
+            color: #23708a;
+        }
+    }
+
+    &--row3{
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 6%;
+
+        h2{
+            color: white;
+            text-align: center;
+            font-size: 2.8rem;
+            padding: 2rem;
+            font-family: 'Coming Soon', cursive;
+        }
+
+        &__li{
+            font-family: 'Work Sans', sans-serif;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            padding: 0.8rem;
+            letter-spacing: 0.2rem;
+        }
+
+        &__li:hover{
+            color: #23708a;
+        }
+
+        &__backToTop{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            li{
+                margin-right: 8.5rem;
+            }
+
+            &--icon{
+                color: white;
+                font-size: 6rem;
+                margin-right: -4rem;
+            }
+        }
+    }
+}
+
+
+
+@media #{$mobile}{
+
+    .partners-master{
+        display: none;
+    }
+
+    .footer-container{
+
+        &--row1{
+            display: none;
+        }
+
+        &--row3{
+
+            h2{
+                font-size: 2.7rem;
+            }
+        }
+    }
+}
+
+
+@media #{$tablet}{
+
+    .partners-master{
+        display: none;
+    }
+
+    .footer-container{
+        height: 100%;
+        width: 100%;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 0%;
+        background: #262626;
+    
+        &--row1{
+    
+            h3{
+                font-family: 'Coming Soon', cursive;
+                color: white;
+                text-align: center;
+                font-size: 1.8rem;
+                max-width: 30ch;
+            }
+    
+            &__socials{
+                @include center-center;
+                margin-top: 4rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+    
+                &--img1{
+                    color: white;
+                    font-size: 3rem;
+                    margin-right: 1rem;
+                    margin-left: 1rem;
+                }
+    
+                &--img2{
+                    color: white;
+                    font-size: 2.8rem;
+                    margin-right: 1rem;
+                    margin-left: 1rem;
+                }
+    
+                &--img3{
+                    font-size: 3rem;
+                    color: white;
+                    margin-right:1rem;
+                    margin-left: 1rem;
+                }
+    
+                &--img4{
+                    color: white;
+                    font-size: 3rem;
+                    margin-right:1rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    
+        &--row2{
+    
+            &__li{
+                font-family: 'Work Sans', sans-serif;
+                color: white;
+                font-size: 2rem;
+                text-align: center;
+                padding: 0.8rem;
+                letter-spacing: 0.2rem;
+            }
+        }
+    
+        &--row3{
+            display: flex;
+            flex-direction: column;
+    
+            margin-right: 5%;
+    
+            h2{
+                color: white;
+                text-align: center;
+                font-size: 2.3rem;
+                padding: 2rem;
+                font-family: 'Coming Soon', cursive;
+            }
+    
+            &__li{
+                font-family: 'Work Sans', sans-serif;
+                color: white;
+                font-size: 2rem;
+                text-align: center;
+                padding: 0.8rem;
+                letter-spacing: 0.2rem;
+            }
+    
+            &__backToTop{
+
+                &--icon{
+                    display: none;
+                }
+            }
+        }
+    }
+}
