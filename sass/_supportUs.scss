@@ -2,20 +2,13 @@
 
 // Membership
 
-.membership-master{
+.membership-container{
     height: 60vh;
     width: 100vw;
-}
-
-.membership-container{
-    height: 100%;
-    width: 100%;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-top: 0%;
 }
 
 .membership-topRow{
@@ -28,13 +21,17 @@
         cursor: pointer;
         padding: 1.6rem;
         margin-right: 2rem;
+        margin-left: 2rem;
         width: 20rem;
-        text-align: center;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+
         
         &__h2{
             font-family: 'Work Sans', sans-serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
             letter-spacing: 0.2rem;
+            text-align: center;
         }
     }
 
@@ -46,12 +43,14 @@
         padding: 1.6rem;
         margin-right: 2rem;
         width: 20rem;
-        text-align: center;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
 
         &__h2{
             font-family: 'Work Sans', sans-serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
             letter-spacing: 0.2rem;
+            text-align: center;
         }
     }
 
@@ -61,153 +60,530 @@
         border-bottom: none;
         cursor: pointer;
         padding: 1.6rem;
+        margin-right: 2rem;
         width: 20rem;
-        text-align: center;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
 
         &__h2{
             font-family: 'Work Sans', sans-serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
             letter-spacing: 0.2rem;
+            text-align: center;
         }
     }
 }
+
 
 .membership-bottomBox{
-    height: 45vh;
-    width: 60vw;
+    height: 33rem;
+    width: 80rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border: 2px solid black;
-
-    &--h1{
-        font-family: 'Work Sans', sans-serif;
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    &--button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    button{
-        background: white;
-        margin-top: 2rem;
-        border: 2px solid black;
-        cursor: pointer;
-        padding: 1.4rem;
-        width: 18rem;
-        text-align: center;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 1.8rem;
-    }
 }
 
-    &--middle{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
 
-        p{
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 300;
-            font-size: 1.2rem;
-            letter-spacing: 0.2rem;
-            width: 40ch;
-        }
+// Membership
 
-        &__right{
-            display: flex;
-            flex-direction: column;
-            margin-left: 2rem;
-
-            &--h2{
-                font-family: 'Work Sans', sans-serif;
-                font-size: 1.8rem;
-                letter-spacing: 0.2rem;
-                margin-left: 4rem;
-                margin-bottom: 2rem;
-            }
-        }
-    }
-}
-
-.donate-bottomBox{
-    height: 45vh;
-    width: 60vw;
+.membership{
+    height: 33rem;
+    width: 80rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0px solid black;
-    padding-top: 8.6rem;
 
     &--h1{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Work Sans', sans-serif;
         font-size: 2rem;
         letter-spacing: 0.2rem;
         text-align: center;
-        margin-bottom: 4rem;
     }
 
     &--button{
+        height: 30%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
 
-    button{
-        background: white;
-        margin-top: 2rem;
-        border: 2px solid black;
-        cursor: pointer;
-        padding: 1.4rem;
-        width: 22rem;
-        text-align: center;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 1.8rem;
+        &__but{
+            background: white;
+            border: 2px solid black;
+            cursor: pointer;
+            padding: 1.4rem;
+            width: 18rem;
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.8rem;
+            border-radius: 1rem;
+        }
+
+        &__but:hover{
+            background: black;
+            color: white;
+        }
     }
-}
 
     &--middle{
+        height: 50%;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        padding-left: 10%;
+        padding-right: 16%;
 
-        p{
+
+        &__p{
             font-family: 'Work Sans', sans-serif;
             font-weight: 300;
             font-size: 1.2rem;
             letter-spacing: 0.2rem;
-            width: 40ch;
+            width: 40ch; 
         }
 
         &__right{
+            height: 100%;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-            margin-left: 2rem;
 
             &--h2{
                 font-family: 'Work Sans', sans-serif;
                 font-size: 1.8rem;
                 letter-spacing: 0.2rem;
                 margin-left: 4rem;
-                margin-bottom: 2rem;
+                padding: 1rem;
             }
         }
     }
 }
 
+
+
+@media #{$mobile}{
+
+}
+
+
+
+@media #{$tablet}{
+
+    .membership-topRow{
+    
+        &--box1{
+            width: 17rem;
+     
+            &__h2{
+                font-size: 1.6rem;
+            }
+        }
+    
+        &--box2{
+            width: 17rem;
+    
+            &__h2{
+                font-size: 1.6rem;
+            }
+        }
+    
+        &--box3{
+                width: 17rem;
+    
+            &__h2{
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .membership-bottomBox{
+        width: 55rem;
+    }
+
+    .membership{
+        width: 55rem;
+    
+        &--h1{
+            font-size: 1.8rem;
+        }
+    
+        &--button{
+    
+            &__but{
+                font-size: 1.4rem;
+            }
+        }
+    
+        &--middle{
+     
+            &__p{
+                font-size: 1.3rem;
+            }
+    
+            &__right{
+    
+                &--h2{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Membership Join
+
+.membership-join{
+    height: 33rem;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--h1{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 3rem;
+        font-family: 'Coming Soon', cursive;
+        letter-spacing: 0.2rem;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+    }
+
+    &--imgContainer{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 2rem;
+
+        &__img{
+            height: 8rem;
+        }
+    }
+}
+
+
+
+
+// Donate
+
+.donate{
+    height: 33rem;
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+
+    &--h1{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+    }
+
+    &--button{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__but{
+            background: white;
+            border: 2px solid black;
+            cursor: pointer;
+            padding: 1.4rem;
+            width: 20.6rem;
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.8rem;
+            border-radius: 1rem;
+        }
+
+        &__but:hover{
+            background: black;
+            color: white;
+        }
+    }
+
+    &--middle{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 16%;
+
+
+        &__p{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 300;
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            width: 40ch; 
+        }
+
+        &__right{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &--h2{
+                font-family: 'Work Sans', sans-serif;
+                font-size: 1.8rem;
+                letter-spacing: 0.2rem;
+                margin-left: 4rem;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+
+@media #{$tablet}{
+
+    .donate{
+        width: 55rem;
+    
+        &--h1{
+            font-size: 1.8rem;
+        }
+    
+        &--button{
+    
+            &__but{
+                font-size: 1.4rem;
+            }
+        }
+    
+        &--middle{
+            padding-left: 10%;
+            padding-right: 10%;
+     
+            &__p{
+                font-size: 1.3rem;
+            }
+    
+            &__right{
+    
+                &--h2{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Donate Join
+
+.donate-join{
+    height: 33rem;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--h1{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 3rem;
+        font-family: 'Coming Soon', cursive;
+        letter-spacing: 0.2rem;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+    }
+
+    &--imgContainer{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 2rem;
+
+        &__img{
+            height: 8rem;
+        }
+    }
+}
+
+
+// Shop
+
+.shop{
+    height: 33rem;
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+
+    &--h1{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+    }
+
+    &--button{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__but{
+            background: white;
+            border: 2px solid black;
+            cursor: pointer;
+            padding: 1.4rem;
+            width: 18rem;
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.8rem;
+            border-radius: 1rem;
+        }
+
+        &__but:hover{
+            background: black;
+            color: white;
+        }
+    }
+
+    &--middle{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 16%;
+
+
+        &__img{
+            height: 13rem;
+        }
+
+        &__right{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &--h2{
+                font-family: 'Work Sans', sans-serif;
+                font-size: 1.8rem;
+                letter-spacing: 0.2rem;
+                margin-left: 4rem;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+@media #{$tablet}{
+
+    .shop{
+        width: 55rem;
+    
+        &--h1{
+            font-size: 1.8rem;
+        }
+    
+        &--button{
+    
+            &__but{
+                font-size: 1.4rem;
+            }
+        }
+    
+        &--middle{
+            padding-left: 10%;
+            padding-right: 10%;
+     
+            &__p{
+                font-size: 1.3rem;
+            }
+    
+            &__right{
+    
+                &--h2{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+// Shop Join
+
+.shop-join{
+    height: 33rem;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--h1{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 3rem;
+        font-family: 'Coming Soon', cursive;
+        letter-spacing: 0.2rem;
+        -webkit-text-stroke: 1px black;
+        text-align: center;
+    }
+
+    &--imgContainer{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 2rem;
+
+        &__img{
+            height: 8rem;
+        }
+    }
+}
 
 // show hide code
 
-.shop-bottomBox, .donate-bottomBox{
+.shop, .donate, .membership-join, .donate-join, .shop-join{
     display: none;
 }

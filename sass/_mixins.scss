@@ -34,11 +34,12 @@
 }
 
 @mixin top-message {
+    border: 2px solid pink;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
     max-width: 110ch;
     letter-spacing: 0.2rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 130%;
 }
 

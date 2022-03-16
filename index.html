@@ -29,35 +29,48 @@
 
 <body>
 
+
     <!-- Landing Page with Nav bar -->
 
-    <section id="landing" class="homePage">
-        <div class="homePage-container">
+        <div class="homePage">
+
 
             <div class="homePage--nav">
+
                 <div>
                 <a href="index.html"><img class="homePage--nav__img" src="./img/logo.png" alt="Logo"></a>
             </div>
 
+            
             <div>
                 <ul class="homePage--nav__ul">
                     <a href="ourStory.html"><li class="homePage--nav__ul--li">Our Story</li></a>
                     <a href="campaigns.html"><li class="homePage--nav__ul--li">Campaigns</li></a>
-                    <a href="supportUs.html"><li class="homePage--nav__support">SUPPORT US</li></a>
+                    <a href="supportUs.html"><li class="homePage--nav__ul--support">SUPPORT US</li></a>
+
                     <div id="hamburger" class="homePage--nav__hamburger"></div>
+
                 </ul>
             </div>
+            
             </div>
+
 
             <!-- Java Hamburg menu -->
 
             <div id="nav-mobile" class="nav-mobile">
+
                 <ul class="nav-mobile__ul">
                     <a href="ourStory.html"><li class="nav-mobile__li">Our Story</li></a>
                     <a href="campaigns.html"><li class="nav-mobile__li">Campaigns</li></a>
                     <a href="supportUs.html"><li class="nav-mobile__li">Support Us</li></a>
                 </ul>
+                
            </div>
+
+
+
+
 
             <div class="homePage--h1">
                 <h1 class="homePage--h1__h1">We are dedicated to the conservation of the Treasures of the New Zealand Surfing Community</h1>
@@ -67,9 +80,8 @@
                 <a href="#ourMission"><button id="ourMission" class="homePage--buttons__button1">Learn More</button></a>
                 <a href="supportUs.html"><button class="homePage--buttons__button2">Join the Wave</button></a>
             </div>
-
+             
         </div>
-    </section>
 
 
 
@@ -80,14 +92,13 @@
     <!-- Our Mission Section -->
 
 
-    <section class="ourMission-master">
-        <div class="ourMission-container">
+        <div id="ourMission" class="ourMission-container">
 
             <div class="ourMission-container--h2">
 
                 <h2 class="ourMission-container--h2__h2">Our Mission</h2>
 
-                <!-- <img class="ourMission-container--h2__img" src="./img/wave.png" alt=""> -->
+                <img class="ourMission-container--h2__img" src="./img/wave.png" alt="">
 
             </div>
 
@@ -123,10 +134,6 @@
             </div>
 
         </div>
-    </section>
-
-
-
 
 
 
@@ -135,11 +142,9 @@
 
             <!-- Latest News Section -->
 
-            <section class="latestNews-master">
                 <div class="latestNews-container">
                     <div class="latestNews-container--h2">
                         <h2 class="latestNews-container--h2__h2">Latest News</h2>
-                        <!-- <img class="latestNews-container--h2__img" src="./img/wave(White).png" alt="Hello"> -->
                     </div>
 
                     <div class="latestNews-container--newsBoxes">
@@ -164,17 +169,7 @@
                         <hr class="latestNews-container--h3__hr">
 
                     </div>
-
-
-
                 </div>
-            </section>
-
-
-
-
-
-
 
 
 
@@ -184,15 +179,28 @@
 
     <!-- Newsletter -->
 
-    <section class="newsletter-master">
-        <div class="newsletter-container">
+        <div id="newsletter-container" class="newsletter-container">
 
             <h1>Sign up to our Newsletter</h1>
 
             <div class="newsletter-container--email"><input class="newsletter-container--email__text" type="text" placeholder="lewismidgley@example.com"></div>
 
-            <button class="newsletter-container--button">Sign Up</button>
+            <button id="signUpButton" class="newsletter-container--button">Sign Up</button>
         </div>
+
+
+    <!-- Newsletter Sign Up  -->
+
+    <section id="newsletterSignUp-container" class="newsletterSignUp-container">
+
+        <div class="newsletterSignUp-container__thankYou">
+
+            <h3 class="newsletterSignUp-container__thankYou--h3">Thank you for signing up to our mailing list</h3>
+
+            <img class="newsletterSignUp-container__thankYou--img" src="./img/shaka.png" alt="">
+
+        </div>
+
     </section>
 
 
@@ -201,30 +209,28 @@
 
     <!-- Footer (Partners Section) -->           
 
-    <section class="partners-master">   
         <div class="partners-container">
 
-            <div class="partners-container--h3"><h3 class="partners-container--h3__text">Our Partners</h3></div>
+            <div class="partners-container--h3">
+                <h3 class="partners-container--h3__text">Our Partners</h3>
+            </div>
 
             <div class="partners-container--logos">
                 <a href="https://www.volcom.com/blogs/truetothis/new-future-environmental-sustainability" target="blank"><img class="partners-container--logos__logo1" src="./img/Volcom.png" alt=""></a>
                 <a href="https://www.savethewaves.org/" target="blank"><img class="partners-container--logos__logo2" src="./img/STW.png" alt=""></a>
                 <a href="https://surfbreakresearch.org/" target="blank"><img class="partners-container--logos__long" src="./img/SBR.png" alt=""></a>
                 <a href="https://www.surfrider.org/" target="blank"><img class="partners-container--logos__logo" src="./img/SRF.png" alt=""></a>
-                <!-- <a href="index.html"><img class="partners-container--logos__logo" src="./img/1%.png" alt=""></a> -->
             </div>
         </div>
-    </section>
 
 
     <!-- Footer --> 
 
-    <footer class="footer-master">
         <div class="footer-container">
 
             <div class="footer-container--row1">
 
-                <h3>We are dedicated to the conservation of the Treasures of the New Zealand Surfing Community</h3>
+                <h3 class="footer-container--row1__h3">We are dedicated to the conservation of the Treasures of the New Zealand Surfing Community</h3>
 
                 <div class="footer-container--row1__socials">
 
@@ -247,22 +253,22 @@
                 </ul>
             </div>
 
+
             <div class="footer-container--row3">
 
-            <h2>Show your Support</h2>
+            <h2 class="footer-container--row3__h2">Show your Support</h2>
 
             <ul class="footer-container--row3__ul">
                 <a href="supportUs.html"><li class="footer-container--row3__li">Membership</li></a>
+
                 <a href="supportUs.html"><li class="footer-container--row3__li">Donate</li></a>
 
-                <div class="footer-container--row3__backToTop">
                 <a href="supportUs.html"><li class="footer-container--row3__li">Shop</li></a>
-                <a href="#landing"><span class="iconify footer-container--row3__backToTop--icon" data-icon="cil:arrow-circle-top"></span></a>
-            </div>    
+            </ul>
             </div>
-
         </div>
-    </footer>
+
+
 
     <script src="./script.js"></script>
 </body>

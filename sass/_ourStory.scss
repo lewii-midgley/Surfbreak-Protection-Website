@@ -2,36 +2,18 @@
 
 
 .header-master{
-    height: 25vh;
+    height: 20vh;
     width: 100vw;
-
     @include center-center;
     flex-direction: column;
     
     &--message{
         @include top-message;
     }
-
-    img{
-        margin-top: 4rem;
-        height: 0.85rem;
-    }
 }
 
 @media #{$mobile}{
 
-    .header-master{
-        
-        &--message{
-            font-size: 1.1rem;
-            margin-left: 2%;
-            margin-right: 2%;
-            width: 60ch;
-        }
-        img{
-            height: 0.8rem;
-        }
-    }
 }
 
 @media #{$tablet}{
@@ -43,49 +25,47 @@
             margin-left: 2%;
             margin-right: 2%;
         }
-        img{
-            height: 0.8rem;
-        }
     }
 }
 
 
+
+
+
 // Begginings Container
 
-.beginnings-master{
-    height: 50vh;
-    width: 100vw;
-}
-
 .beginnings-container{
-    width: 100%;
-    height: 100%;
+    height: 55vh;
+    width: 100vw;
+    display: flex;
     background: url(../img/underwater-near-ocean-surface-with-rising-bubbles-in-blue-sea-incredivfx.jpeg);
     @include background-image;
-    display: flex;
+    
 
     &--left{
+        height: 100%;
+        width: 60%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        height: 100%;
-        width: 60%;
+
         padding-left: 10%;
         padding-top: 2%;
+        border: 2px solid pink;
 
-        h1{
+        &__h1{
             font-family: 'Coming Soon', cursive;
-            font-size: 4rem;
+            font-size: 3rem;
             color: white;
             letter-spacing: 0.2rem;
             margin-bottom: 5%;
         }
 
-        p{
+        &__p{
             font-family: 'Work Sans', sans-serif;
             font-weight: 300;
-            font-size: 1.7rem;
+            font-size: 1.4rem;
             color: white;
             letter-spacing: 0.2rem;
             margin-right: 17%;
@@ -95,41 +75,52 @@
     }
 
     &--right{
+        height: 100%;
+        width: 40%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        height: 100%;
-        width: 40%;
-    }
+        border: 2px solid pink;
 
-    img{
-        height: 80%;
-        border-radius: 2%;
-
+        &__img{
+            height: 35rem;
+            border-radius: 2%;
+            padding-left: 2rem;
+        }
     }
 }
 
 @media #{$mobile}{
 
-    .beginnings-container{
+}
+
+@media #{$tablet}{
+
+    .beginnings-container{        
+    
         &--left{
+            height: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            padding-top: 4%;
-            margin: 0;
-            padding: 0;
+            flex-direction: column;
+            padding-left: 0%;
+            padding-top: 0%;
     
-            h1{
-                font-size: 3.4rem;
-                margin-bottom: 5%;
+            &__h1{
+                font-size: 2.8rem;
+                margin-bottom: 0%;
+                text-align: center;
             }
     
-            p{
-                font-size: 1.4rem;
+            &__p{
+                font-size: 1.3rem;
                 margin-right: 0%;
-                width: 50ch;
+                line-height: 130%;
+                width: 60ch;
+
+                padding-top: 3rem;
                 text-align: center;
             }
         }
@@ -138,69 +129,41 @@
             display: none;
         }
     }
-
 }
 
-@media #{$tablet}{
 
-    .beginnings-container{
-        &--left{
-            width: 50%;
-            padding-left: 5%;
-            padding-top: 4%;
-    
-            h1{
-                font-size: 3rem;
-                margin-bottom: 5%;
-            }
-    
-            p{
-                font-size: 1.4rem;
-                margin-right: 0%;
-                width: 50ch;
-            }
-        }
-    
-        &--right{
-            justify-content: flex-end;
-            width: 40%;
-        }
-    
-        img{
-            height: 70%;
-        }
-    }
-}
+
+
 
 
 // Our Crew Container
 
-.crew-master{
-    height: 65vh;
-    width: 100vw;
-}
 
 .crew-container{
-    height: 100%;
-    width: 100%;
+    height: 75vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    border: 2px solid green;
 
     &--header{
         height: 30%;
+        width: 100%;
         @include center-center;
         flex-direction: column;
+        border: 2px solid green;
 
         &__h2{
-            font-size: 4.8rem;
-            margin-top: 7rem;
+            font-size: 3.4rem;
             font-family: 'Coming Soon', cursive;
             letter-spacing: 0.2rem;
             -webkit-text-stroke: 1px black;
+            padding-top: 2rem;
+            text-align: center;
         }
 
-        img{
-            height: 8rem;
+        &__img{
+            height: 6rem;
         }
     }
 
@@ -209,104 +172,72 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        border: 2px solid green;
 
         &__profile{
             text-align: center;
-            
-        }
-        img{
-            height: 22rem;
-            width: 28rem;
-            border-radius: 2%;
-        }
 
-        h2{
-            margin-top: 2rem;
-            font-size: 2rem;
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 500;
-            letter-spacing: 0.2rem;
-        }
+            &--img{
+                height: 22rem;
+                width: 28rem;
+                border-radius: 2%;
+            }
 
-        h3{
-            margin-top: 0.5rem;
-            font-size: 1.5rem;
-            font-family: 'Coming Soon', cursive;
-            letter-spacing: 0.3rem;
-            color: #23708a;
+            &--h2{
+                margin-top: 2rem;
+                font-size: 2rem;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 500;
+                letter-spacing: 0.2rem;
+            }
 
+            &--h3{
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+                font-family: 'Coming Soon', cursive;
+                letter-spacing: 0.3rem;
+                color: #23708a;
+            } 
         }
     }
 }
 
 @media #{$mobile}{
 
-    .crew-master{
-        height: 190vh;
-        width: 100vw;
-    }
-    
-    .crew-container{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 0;
-        padding-top: 0;
-    
-        &--header{
-            height: 22%;
-            margin-bottom: 2rem;
-            margin-top: 0;
-            padding-top: 0;
-    
-            &__h2{
-                margin-top: 0;
-                padding-top: 0;
-            }
-        }
-    
-        &--profiles{
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-    
-            img{
-                height: 26rem;
-                width: 32rem;
-            }
-
-            h3{
-                margin-bottom: 4rem;
-    
-            }
-        }
-    }
 }
 
 
 @media #{$tablet}{
 
-    .crew-master{
-        height: 55vh;
-        width: 100vw;
-    }
-
     .crew-container{
+        height: 115vh;
+    
+        &--header{
+            height: 20%;
+        }
+    
         &--profiles{
-            height: 70%;
+            height: 80%;
             display: flex;
             justify-content: space-evenly;
-            align-items: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
     
             &__profile{
                 text-align: center;
-            }
-            img{
-                height: 18rem;
-                width: 20rem;
+    
+                &--img{
+                    height: 20rem;
+                    width: 26rem;
+                }
+    
+                &--h2{
+                    font-size: 1.8rem;
+                }
+    
+                &--h3{
+                    font-size: 1.3rem;
+                } 
             }
         }
     }
@@ -316,15 +247,10 @@
 
 // Membership and Donations Container
 
-.membershipDonation-master{
-    height: 50vh;
-    width: 100vw;
-}
 
 .membershipDonation-container{
-    height: 100%;
-    width: 100%;
-    background: none;
+    height: 55vh;
+    width: 100vw;
     @include center-center;
     flex-direction: column;
     background: url(../img/dwdscvds.jpeg);
@@ -334,21 +260,21 @@
     &--h1{
         color: white;
         font-family: 'Work Sans', sans-serif;
-        font-size: 4rem;
+        font-size: 3.2rem;
         letter-spacing: 0.8rem;
+        text-align: center;
     }
 
     &--h3{
         color: white;
         font-family: 'Work Sans', sans-serif;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 300;
         letter-spacing: 0.3rem;
         text-align: center;
-        margin-left: 37rem;
-        margin-right: 37rem;
-        margin-top: 6rem;
-        margin-bottom: 6rem;
+        max-width: 78ch;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
         line-height: 130%;
 
     }
@@ -363,6 +289,7 @@
         font-size: 2.2rem;
         font-family: 'Work Sans', sans-serif;
         width: 25rem;
+        text-align: center;
     }
 
     &--button:hover{
@@ -374,36 +301,29 @@
 
 @media #{$mobile}{
 
-    .membershipDonation-container{
- 
-        &--h1{
-            font-size: 2.8rem;
-            letter-spacing: 0.5rem;
-        }
-    
-        &--h3{
-            font-size: 2rem;
-            margin-left: 5rem;
-            margin-right: 5rem;
-        }
-    }
-
 }
 
 
 @media #{$tablet}{
 
     .membershipDonation-container{
- 
+    
         &--h1{
-            font-size: 3.7rem;
-            letter-spacing: 0.5rem;
+            font-size: 2.4rem;
+            letter-spacing: 0.6rem;
         }
     
         &--h3{
-            font-size: 2rem;
-            margin-left: 7rem;
-            margin-right: 7rem;
+            font-size: 1.4rem;
+            max-width: 64ch;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    
+        &--button{
+            padding: 1.2rem;
+            font-size: 1.8rem;
+            width: 22rem;
         }
     }
 }

@@ -26,28 +26,25 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
 </head>
-
-
 <body>
 
+
+    
     <!-- Navigation Bar -->
 
-    <nav id="toTop" class="nav-master">
-        <div class="nav-container">
-      <div>
-        <a href="index.html"><img class="nav-container__img" src="./img/logo.png" alt="Logo"></a>
+    <div class="nav">
+        <div>
+        <a href="index.html"><img class="nav__img" src="./img/logo.png" alt="Logo"></a>
     </div>
-
     <div>
-        <ul class="nav-container__ul">
-            <a href="ourStory.html"><li class="nav-container__ul--li">Our Story</li></a>
-            <a href="campaigns.html"><li class="nav-container__ul--li">Campaigns</li></a>
-            <a href="supportUs.html"><li class="nav-container__ul--support">SUPPORT US</li></a>
-            <div id="hamburger" class="homePage--nav__hamburger"></div>
+        <ul class="nav__ul">
+            <a href="ourStory.html"><li class="nav__ul--li">Our Story</li></a>
+            <a href="campaigns.html"><li class="nav__ul--li">Campaigns</li></a>
+            <a href="supportUs.html"><li class="nav__ul--support">SUPPORT US</li></a>
+            <div id="hamburger" class="nav__hamburger"></div>
         </ul>
     </div>
-</div>
-</nav>
+    </div>
 
             <!-- Java Hamburg menu -->
 
@@ -59,23 +56,20 @@
                 </ul>
            </div>
 
+
+
+
 <!-- Header statement -->
 
-<section class="header-master">
-    <div><h1 class="header-master--message">Increasingly at Surfbreak Protection Society we rely on the New Zealand surfing community to get behind our efforts in protecting surfbreaks at risk.</h1>
+    <div class="header-master">
+        <h1 class="header-master--message">Increasingly at Surfbreak Protection Society we rely on the New Zealand surfing community to get behind our efforts in protecting surfbreaks at risk.</h1>
     </div>
-    <div>
-        <img src="./img/wave(Short).png" alt="">
-    </div>
-    </section>
 
 
 
     <!-- Membership box -->
 
-    <section class="membership-master">
         <div class="membership-container">
-
             <div class="membership-topRow">
                 <div id="membership" class="membership-topRow--box1">
                     <h2 class="membership-topRow--box1__h2">Membership</h2>
@@ -88,130 +82,173 @@
                 </div>
             </div>
 
-            <div class="membership-bottomBox display">
-                <div id="membership-content">
-                    <h1 class="membership-bottomBox--h1">Surfbreak Protection Society Membership</h1>
 
-                    <div class="membership-bottomBox--middle">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi sequi aliquam vitae vel est assumenda, aut dolorum iusto, quos accusantium qui cupiditate consequatur dolor. Temporibus porro aspernatur cumque doloribus!</p>
-    
-                        <div class="membership-bottomBox--middle__right">
-                        <h2 class="membership-bottomBox--middle__right--h2">Yearly</h2>
-                        <h2 class="membership-bottomBox--middle__right--h2">$12</h2>
+            <div class="membership-bottomBox">
+
+
+
+                <!-- Membership -->
+
+                <div id="membership-content" class="membership">
+                    <h1 class="membership--h1">Surfbreak Protection Society Membership</h1>
+                    <div class="membership--middle">
+                        <p class="membership--middle__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi sequi aliquam vitae vel est assumenda, aut dolorum iusto, quos accusantium qui cupiditate consequatur dolor. Temporibus porro aspernatur cumque doloribus!</p>
+                        <div class="membership--middle__right">
+                        <h2 class="membership--middle__right--h2">Yearly</h2>
+                        <h2 class="membership--middle__right--h2">$12</h2>
                     </div>
                     </div>
+                    <div class="membership--button">
+                    <button id="joinTheWave" class="membership--button__but">Join the Wave</button>
+                </div>
+                </div>
 
-                    <div class="membership-bottomBox--button">
-                    <button>Join the Wave</button>
+
+                <!-- Membership Join -->
+
+                <div id="membership-join" class="membership-join">
+                    <h1 class="membership-join--h1">Welcome to the Wave</h1>
+                    <div class="membership-join--imgContainer">
+                    <img class="membership-join--imgContainer__img" src="./img/shaka.png" alt="Shaka">
                 </div>
 
                 </div>
+
+
 
                 <!-- Donation -->
                
-                <div id="donate-content" class="donate-bottomBox">
-                    <h1 class="donate-bottomBox--h1">Surfbreak Protection Society Donation</h1>
-
-                    <div class="donate-bottomBox--middle">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi sequi aliquam vitae vel est assumenda, aut dolorum iusto, quos accusantium qui cupiditate consequatur dolor. Temporibus porro aspernatur cumque doloribus!</p>
-    
-                        <div class="donate-bottomBox--middle__right">
-                        <h2 class="donate-bottomBox--middle__right--h2">Recomended</h2>
-                        <h2 class="donate-bottomBox--middle__right--h2">$20</h2>
+                <div id="donate-content" class="donate">
+                    <h1 class="donate--h1">Surfbreak Protection Society Donation</h1>
+                    <div class="donate--middle">
+                        <p class="donate--middle__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi sequi aliquam vitae vel est assumenda, aut dolorum iusto, quos accusantium qui cupiditate consequatur dolor. Temporibus porro aspernatur cumque doloribus!</p>
+                        <div class="donate--middle__right">
+                        <h2 class="donate--middle__right--h2">Reccomended</h2>
+                        <h2 class="donate--middle__right--h2">$20</h2>
                     </div>
                     </div>
+                    <div class="donate--button">
+                    <button id="donateToTheWave" class="donate--button__but">Donate to the Wave</button>
+                </div>
+                </div>
+                
 
-                    <div class="donate-bottomBox--button">
-                    <button>Donate to the Wave</button>
+
+                <!-- Donate Join -->
+
+                <div id="donate-join" class="donate-join">
+                    <h1 class="membership-join--h1">Thank you for your Donation</h1>
+                    <div class="membership-join--imgContainer">
+                    <img class="membership-join--imgContainer__img" src="./img/shaka.png" alt="Shaka">
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Shop -->
+
+                <div id="shop-content" class="shop">
+                    <h1 class="shop--h1">Surfbreak Protection Society T-Shirt</h1>
+                    <div class="shop--middle">
+                        <img class="shop--middle__img" src="./img/tee.jpg" alt="">
+                        <div class="shop--middle__right">
+                        <h2 class="shop--middle__right--h2">Price</h2>
+                        <h2 class="shop--middle__right--h2">$25</h2>
+                    </div>
+                    </div>
+                    <div class="shop--button">
+                    <button id="shopTheWave" class="shop--button__but">Shop the Wave</button>
                 </div>
                 </div>
 
-                <!-- shop -->
 
-                <div id="shop-content" class="shop-bottomBox">
-                    <h1>Under Construction</h1>
-                    <div class="membership-bottomBox--middle">
-                        <div class="membership-bottomBox--middle__right">
-                    </div>
+                <!-- Shop Join -->
+
+                <div id="shop-join" class="shop-join">
+                     <h1 class="shop-join--h1">Thank you for your Purchase</h1>
+                    <div class="shop-join--imgContainer">
+                        <img class="shop-join--imgContainer__img" src="./img/shaka.png" alt="Shaka">
                     </div>
                 </div>
+
+
+
             </div>
         </div>
-    </section>
+
+
+
+
+
+
+
+
 
 
        
-
-
     <!-- Footer (Partners Section) -->           
 
-    <section class="partners-master">   
-        <div class="partners-container">
+    <div class="partners-container">
 
-            <div class="partners-container--h3"><h3 class="partners-container--h3__text">Our Partners</h3></div>
+        <div class="partners-container--h3">
+            <h3 class="partners-container--h3__text">Our Partners</h3>
+        </div>
 
-            <div class="partners-container--logos">
-                <a href="https://www.volcom.com/blogs/truetothis/new-future-environmental-sustainability" target="blank"><img class="partners-container--logos__logo1" src="./img/Volcom.png" alt=""></a>
-                <a href="https://www.savethewaves.org/" target="blank"><img class="partners-container--logos__logo2" src="./img/STW.png" alt=""></a>
-                <a href="https://surfbreakresearch.org/" target="blank"><img class="partners-container--logos__long" src="./img/SBR.png" alt=""></a>
-                <a href="https://www.surfrider.org/" target="blank"><img class="partners-container--logos__logo" src="./img/SRF.png" alt=""></a>
-                <a href="https://www.onepercentfortheplanet.org/" target="blank"><img class="partners-container--logos__logo" src="./img/1%.png" alt=""></a>
+        <div class="partners-container--logos">
+            <a href="https://www.volcom.com/blogs/truetothis/new-future-environmental-sustainability" target="blank"><img class="partners-container--logos__logo1" src="./img/Volcom.png" alt=""></a>
+            <a href="https://www.savethewaves.org/" target="blank"><img class="partners-container--logos__logo2" src="./img/STW.png" alt=""></a>
+            <a href="https://surfbreakresearch.org/" target="blank"><img class="partners-container--logos__long" src="./img/SBR.png" alt=""></a>
+            <a href="https://www.surfrider.org/" target="blank"><img class="partners-container--logos__logo" src="./img/SRF.png" alt=""></a>
+        </div>
+    </div>
+
+
+<!-- Footer --> 
+
+    <div class="footer-container">
+
+        <div class="footer-container--row1">
+
+            <h3 class="footer-container--row1__h3">We are dedicated to the conservation of the Treasures of the New Zealand Surfing Community</h3>
+
+            <div class="footer-container--row1__socials">
+
+                <a href="https://www.facebook.com/Surfbreak-Protection-Society-158580380850950/" target="blank"><span class="iconify footer-container--row1__socials--img1" data-icon="ant-design:facebook-outlined"></span></a>
+
+                <a href="https://www.instagram.com/surfbreak_protection_society/?hl=en" target="blank"><span class="iconify footer-container--row1__socials--img2" data-icon="akar-icons:instagram-fill"></span></a>
+
+                <a href="https://www.youtube.com/user/SurfbreakProtection/videos" target="blank"><span class="iconify footer-container--row1__socials--img3" data-icon="ant-design:youtube-outlined"></span></a>
+
+                <a href="https://nz.linkedin.com/in/michael-gunson-30b08527" target="blank"><span class="iconify footer-container--row1__socials--img3" data-icon="ant-design:linkedin-outlined"></span></a>
             </div>
         </div>
-    </section>
 
-
-    <!-- Footer --> 
-
-    <footer class="footer-master">
-        <div class="footer-container">
-
-            <div class="footer-container--row1">
-
-                <h3>We are dedicated to the conservation of the Treasures of the New Zealand Surfing Community</h3>
-
-                <div class="footer-container--row1__socials">
-
-                    <a href="https://www.facebook.com/Surfbreak-Protection-Society-158580380850950/" target="blank"><span class="iconify footer-container--row1__socials--img1" data-icon="ant-design:facebook-outlined"></span></a>
-
-                    <a href="https://www.instagram.com/wsl/?hl=en" target="blank"><span class="iconify footer-container--row1__socials--img2" data-icon="akar-icons:instagram-fill"></span></a>
-
-                    <a href="https://www.youtube.com/user/SurfbreakProtection/videos" target="blank"><span class="iconify footer-container--row1__socials--img3" data-icon="ant-design:youtube-outlined"></span></a>
-
-                    <a href="https://nz.linkedin.com/in/michael-gunson-30b08527" target="blank"><span class="iconify footer-container--row1__socials--img3" data-icon="ant-design:linkedin-outlined"></span></a>
-                </div>
-            </div>
-
-            <div class="footer-container--row2">
-                <ul class="footer-container--row2__ul">
-                    <a href="ourStory.html"><li class="footer-container--row2__li">Our Story</li></a>
-                    <a href="campaigns.html"><li class="footer-container--row2__li">Campaigns</li></a>
-                    <a href="http://www.surfbreak.org.nz/library/" target="black"><li class="footer-container--row2__li">Resources</li></a>
-                    <a href="supportUs.html"><li class="footer-container--row2__li">Contact</li></a>
-                </ul>
-            </div>
-
-            <div class="footer-container--row3">
-
-            <h2>Show your Support</h2>
-
-            <ul class="footer-container--row3__ul">
-                <a href="supportUs.html"><li class="footer-container--row3__li">Membership</li></a>
-                <a href="supportUs.html"><li class="footer-container--row3__li">Donate</li></a>
-
-                <div class="footer-container--row3__backToTop">
-                <a href="supportUs.html"><li class="footer-container--row3__li">Shop</li></a>
-                <a href="#toTop"><span class="iconify footer-container--row3__backToTop--icon" data-icon="cil:arrow-circle-top"></span></a>
-            </div>    
-            </div>
-
+        <div class="footer-container--row2">
+            <ul class="footer-container--row2__ul">
+                <a href="ourStory.html"><li class="footer-container--row2__li">Our Story</li></a>
+                <a href="campaigns.html"><li class="footer-container--row2__li">Campaigns</li></a>
+                <a href="http://www.surfbreak.org.nz/library/" target="black"><li class="footer-container--row2__li">Resources</li></a>
+                <a href="supportUs.html"><li class="footer-container--row2__li">Contact</li></a>
+            </ul>
         </div>
-    </footer>
 
 
+        <div class="footer-container--row3">
 
+        <h2 class="footer-container--row3__h2">Show your Support</h2>
 
+        <ul class="footer-container--row3__ul">
+            <a href="supportUs.html"><li class="footer-container--row3__li">Membership</li></a>
 
+            <a href="supportUs.html"><li class="footer-container--row3__li">Donate</li></a>
+
+            <a href="supportUs.html"><li class="footer-container--row3__li">Shop</li></a>
+        </ul>
+        </div>
+    </div>
 
 
 <script src="./script.js"></script>
