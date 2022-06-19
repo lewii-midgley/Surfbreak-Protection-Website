@@ -3,12 +3,13 @@
 // Membership
 
 .membership-container{
-    height: 60vh;
+    height: 50rem;
     width: 100vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 2px solid green;
 }
 
 .membership-topRow{

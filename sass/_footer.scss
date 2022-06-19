@@ -1,11 +1,12 @@
 
 
 .partners-container{
-    height: 25vh;
+    height: 18rem;
     width: 100vw;
     display: flex;
     flex-direction: column;
     background: #262626;
+    border: 1px solid #262626;
 
     &--h3{
         height: 40%;
@@ -47,7 +48,7 @@
 
 
 .footer-container{
-    height: 35vh;
+    height: 25rem;
     width: 100vw;
     display: flex;
     justify-content: space-between;
