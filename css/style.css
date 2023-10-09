@@ -36,7 +36,7 @@ ul {
   height: 100vh;
   width: 100vw; }
   .homePage--nav {
-    height: 20%;
+    height: 12rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -157,7 +157,7 @@ ul {
 @media (max-width: 600px) {
   .homePage {
     display: none; } }
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .homePage--nav {
     border: 2px solid pink;
     padding-left: 8%;
@@ -298,7 +298,7 @@ ul {
         padding-left: 6%;
         padding-right: 6%; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .ourMission-container {
     height: 125vh; }
     .ourMission-container--h2 {
@@ -453,7 +453,8 @@ ul {
         padding-right: 7%;
         font-family: 'Work Sans', sans-serif;
         font-size: 1.4rem;
-        letter-spacing: 0.1rem; }
+        letter-spacing: 0.1rem;
+        line-height: 140%; }
     .latestNews-container--newsBoxes__box2 {
       display: flex;
       justify-content: center;
@@ -476,7 +477,8 @@ ul {
         padding-right: 7%;
         font-family: 'Work Sans', sans-serif;
         font-size: 1.4rem;
-        letter-spacing: 0.1rem; }
+        letter-spacing: 0.1rem;
+        line-height: 140%; }
     .latestNews-container--newsBoxes__box3 {
       display: flex;
       justify-content: center;
@@ -499,10 +501,11 @@ ul {
         padding-right: 7%;
         font-family: 'Work Sans', sans-serif;
         font-size: 1.4rem;
-        letter-spacing: 0.1rem; }
+        letter-spacing: 0.1rem;
+        line-height: 140%; }
     .latestNews-container--newsBoxes h3:hover {
       font-size: 1.45rem;
-      line-height: 140%;
+      line-height: 145%;
       cursor: pointer; }
   .latestNews-container--h3 {
     height: 15%;
@@ -592,7 +595,7 @@ ul {
 
   .newsletter-container {
     display: none; } }
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .latestNews-container {
     height: 65vh;
     width: 100vw; }
@@ -720,7 +723,7 @@ ul {
     font-family: 'Coming Soon', cursive;
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     max-width: 30ch; }
   .footer-container--row1__socials {
     display: flex;
@@ -786,7 +789,7 @@ ul {
     .footer-container--row3__li:hover {
       color: #23708a; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .partners-container {
     display: none; }
 
@@ -859,7 +862,7 @@ ul {
     cursor: pointer;
     display: none; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .nav {
     padding-left: 8%;
     padding-right: 8%; }
@@ -893,7 +896,7 @@ ul {
     font-size: 1.4rem;
     line-height: 130%; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .header-master--message {
     font-size: 1.2rem;
     margin-left: 2%;
@@ -945,7 +948,7 @@ ul {
       border-radius: 2%;
       padding-left: 2rem; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .beginnings-container--left {
     height: 100%;
     width: 100%;
@@ -1016,7 +1019,7 @@ ul {
         letter-spacing: 0.3rem;
         color: #23708a; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .crew-container {
     height: 115vh; }
     .crew-container--header {
@@ -1082,7 +1085,7 @@ ul {
     color: black;
     background: white; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .membershipDonation-container--h1 {
     font-size: 2.4rem;
     letter-spacing: 0.6rem; }
@@ -1272,7 +1275,7 @@ ul {
         margin-right: 3rem;
         margin-top: 1rem; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .campaign-holder {
     justify-content: center;
     align-items: center; }
@@ -1430,7 +1433,7 @@ ul {
         margin-left: 4rem;
         padding: 1rem; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .membership-topRow--box1 {
     width: 17rem; }
     .membership-topRow--box1__h2 {
@@ -1545,7 +1548,7 @@ ul {
         margin-left: 4rem;
         padding: 1rem; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .donate {
     width: 55rem; }
     .donate--h1 {
@@ -1643,7 +1646,7 @@ ul {
         margin-left: 4rem;
         padding: 1rem; }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1129px) {
   .shop {
     width: 55rem; }
     .shop--h1 {
