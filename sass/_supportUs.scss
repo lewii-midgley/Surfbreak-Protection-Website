@@ -172,6 +172,9 @@
 
 @media #{$mobile}{
 
+    .membership-container{
+        display: none;
+    }
 }
 
 

@@ -133,9 +133,11 @@ ul {
       background: white; }
 
 .nav-mobile {
-  height: 30vh;
-  width: 100%;
+  height: 20rem;
+  width: 40%;
+  margin-left: 60%;
   background: lightskyblue;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,8 +157,34 @@ ul {
     color: #dadada; }
 
 @media (max-width: 600px) {
-  .homePage {
-    display: none; } }
+  .homePage--nav {
+    border: 2px solid pink;
+    padding-left: 8%;
+    padding-right: 8%; }
+    .homePage--nav__img {
+      height: 6rem; }
+    .homePage--nav__ul--li {
+      display: none; }
+    .homePage--nav__ul--support {
+      display: none; }
+    .homePage--nav__hamburger {
+      display: block; }
+  .homePage--h1 {
+    padding-top: 0rem;
+    border: 2px solid pink; }
+    .homePage--h1__h1 {
+      max-width: 38ch;
+      font-size: 2rem; }
+  .homePage--buttons {
+    border: 2px solid pink; }
+    .homePage--buttons__button1 {
+      margin-right: 3rem;
+      font-size: 2rem;
+      width: 20rem; }
+    .homePage--buttons__button2 {
+      margin-left: 3rem;
+      font-size: 2rem;
+      width: 20rem; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .homePage--nav {
     border: 2px solid pink;
@@ -298,6 +326,9 @@ ul {
         padding-left: 6%;
         padding-right: 6%; }
 
+@media (max-width: 600px) {
+  .ourMission-container {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .ourMission-container {
     height: 125vh; }
@@ -789,6 +820,12 @@ ul {
     .footer-container--row3__li:hover {
       color: #23708a; }
 
+@media (max-width: 600px) {
+  .partners-container {
+    display: none; }
+
+  .footer-container {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .partners-container {
     display: none; }
@@ -862,6 +899,24 @@ ul {
     cursor: pointer;
     display: none; }
 
+@media (max-width: 600px) {
+  .nav {
+    padding-left: 8%;
+    padding-right: 8%; }
+    .nav__img {
+      height: 6rem; }
+    .nav__ul {
+      display: flex; }
+      .nav__ul--active {
+        display: none; }
+      .nav__ul--li {
+        display: none; }
+      .nav__ul--wave {
+        display: none; }
+      .nav__ul--support {
+        display: none; }
+    .nav__hamburger {
+      display: block; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .nav {
     padding-left: 8%;
@@ -896,6 +951,9 @@ ul {
     font-size: 1.4rem;
     line-height: 130%; }
 
+@media (max-width: 600px) {
+  .header-master {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .header-master--message {
     font-size: 1.2rem;
@@ -948,6 +1006,9 @@ ul {
       border-radius: 2%;
       padding-left: 2rem; }
 
+@media (max-width: 600px) {
+  .beginnings-container {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .beginnings-container--left {
     height: 100%;
@@ -1019,6 +1080,9 @@ ul {
         letter-spacing: 0.3rem;
         color: #23708a; }
 
+@media (max-width: 600px) {
+  .crew-container {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .crew-container {
     height: 115vh; }
@@ -1033,8 +1097,8 @@ ul {
       .crew-container--profiles__profile {
         text-align: center; }
         .crew-container--profiles__profile--img {
-          height: 20rem;
-          width: 26rem; }
+          height: 21rem;
+          width: 27rem; }
         .crew-container--profiles__profile--h2 {
           font-size: 1.8rem; }
         .crew-container--profiles__profile--h3 {
@@ -1085,6 +1149,9 @@ ul {
     color: black;
     background: white; }
 
+@media (max-width: 600px) {
+  .membershipDonation-container {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .membershipDonation-container--h1 {
     font-size: 2.4rem;
@@ -1275,6 +1342,12 @@ ul {
         margin-right: 3rem;
         margin-top: 1rem; }
 
+@media (max-width: 600px) {
+  .campaign-container {
+    display: none; }
+
+  .campaign-second-container {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .campaign-holder {
     justify-content: center;
@@ -1433,6 +1506,9 @@ ul {
         margin-left: 4rem;
         padding: 1rem; }
 
+@media (max-width: 600px) {
+  .membership-container {
+    display: none; } }
 @media (min-width: 601px) and (max-width: 1129px) {
   .membership-topRow--box1 {
     width: 17rem; }

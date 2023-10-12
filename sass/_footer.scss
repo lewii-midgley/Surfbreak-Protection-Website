@@ -167,6 +167,13 @@
 
 @media #{$mobile}{
 
+    .partners-container{
+        display: none;
+    }
+
+    .footer-container{
+        display: none;
+    }
 }
 
 

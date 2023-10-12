@@ -1,5 +1,4 @@
 
-
 .campaign-container{
     height: 40rem;
     width: 100vw;
@@ -114,9 +113,6 @@
 }
 
 
-
-
-
 .campaign-second-container{
     height: 40rem;
     width: 100vw;
@@ -229,6 +225,13 @@
 
 @media #{$mobile}{
 
+    .campaign-container{
+        display: none;
+    }
+
+    .campaign-second-container{
+        display: none;
+    }
 }
 
 

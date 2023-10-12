@@ -85,7 +85,40 @@
 
 
 @media #{$mobile}{
+    
+    .nav{
+        padding-left: 8%;
+        padding-right: 8%;
+    
+        &__img{
+            height: 6rem;
+        }
+    
+        &__ul{
+            display: flex;
+    
+            &--active{
+                display: none;
 
+            }
+    
+            &--li{
+                display: none;
+            }
+    
+            &--wave{
+                display: none;
+            }
+    
+            &--support{
+                display: none;
+            }
+        }
+        
+        &__hamburger{
+            display: block;
+        }
+    }
 }
 
 
